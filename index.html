@@ -1,0 +1,946 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Bernoulli</title>
+
+        
+        <!-- Le javascript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="js/jqueryv-1.7.1.js"></script>    
+        <script src="js/jquery.functions.js"></script>    
+        <script src="js/bootstrap.js"></script>   
+        <script type="text/javascript" src="js/ui.core.js"></script>
+        <script type="text/javascript" src="js/ui.datepicker.js"></script>
+        
+        <!-- script src="js/application.js"></script -->    
+        <!-- script src="js/bootswatch.js"></script -->    
+        <!-- script src="js/bsa.js"></script -->  
+        <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+        <!--[if lt IE 9]>
+        <script src="js/html5.js"></script>
+        <![endif]-->
+        
+        <!-- Le styles -->
+        <link href="css/ui.all.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        
+        <link href="css/estilo.css" rel="stylesheet">
+        
+        <link href="css/smoothness/jquery-ui-1.8.4.custom.css" rel="stylesheet">
+        
+        <script type="text/javascript">
+        
+            jQuery(document).ready(function($) {        	
+                $("#reynold_concepto_,#reynold_ejercicios_,#reynold_soluciones_").hide();
+                $("#ptub_concepto_,#ptub_tablas_,#ptub_graficas_,#ptub_ejercicios_,#ptub_soluciones_").hide();
+                $("#pmenor_concepto_,#pmenor_tablas_,#pmenor_ejercicios_,#pmenor_soluciones_").hide();
+                $("#bernoulli_concepto_,#bernoulli_ejercicios_,#bernoulli_soluciones_").hide();
+                
+                $("#index").show('blind');                
+            
+                /*******************************************************************/
+                /**************************    INDEX    ****************************/
+                /*******************************************************************/
+                $("#idx").click(function(){
+                    //reynold
+                    if($("#reynold_concepto_").is(":visible")) $("#reynold_concepto_").hide("");
+                    if($("#reynold_ejercicios_").is(":visible")) $("#reynold_ejercicios_").hide("");
+					if($("#reynold_soluciones_").is(":visible")) $("#reynold_soluciones_").hide("");
+                    
+                    //tuber&iacute;as
+                    if($("#ptub_concepto_").is(":visible")) $("#ptub_concepto_").hide("");
+                    if($("#ptub_tablas_").is(":visible")) $("#ptub_tablas_").hide("");
+                    if($("#ptub_graficas_").is(":visible")) $("#ptub_graficas_").hide("");
+                    if($("#ptub_ejercicios_").is(":visible")) $("#ptub_ejercicios_").hide("");
+                    if($("#ptub_soluciones_").is(":visible")) $("#ptub_soluciones_").hide("");
+                    
+                    //P&eacute;rdidas
+                    if($("#pmenor_concepto_").is(":visible")) $("#pmenor_concepto_").hide("");
+                    if($("#pmenor_ejercicios_").is(":visible")) $("#pmenor_ejercicios_").hide("");
+                    if($("#pmenor_tablas_").is(":visible")) $("#pmenor_tablas_").hide("");
+                    if($("#pmenor_soluciones_").is(":visible")) $("#pmenor_soluciones_").hide(""); 
+                    
+                    //bernoulli
+                    if($("#bernoulli_concepto_").is(":visible")) $("#bernoulli_concepto_").hide("");
+                    if($("#bernoulli_ejercicios_").is(":visible")) $("#bernoulli_ejercicios_").hide("");
+                    if($("#bernoulli_soluciones_").is(":visible")) $("#bernoulli_soluciones_").hide("");
+                    
+                    //index                
+                    if($("#index").is(":hidden")) $("#index").show("slide");
+                    
+                    
+                });	
+                
+                /*******************************************************************/
+                /*************************    REYNOLDS    **************************/
+                /*******************************************************************/
+                // REYNOLDS - CONCEPTO ********************************************\\
+                $("#reynold_concepto").click(function(){
+                   //index
+                    if($("#index").is(":visible")) $("#index").hide("");
+                    
+                    //tuber&iacute;as
+                    if($("#ptub_concepto_").is(":visible")) $("#ptub_concepto_").hide("");
+                    if($("#ptub_tablas_").is(":visible")) $("#ptub_tablas_").hide("");
+                    if($("#ptub_graficas_").is(":visible")) $("#ptub_graficas_").hide("");
+                    if($("#ptub_ejercicios_").is(":visible")) $("#ptub_ejercicios_").hide("");
+                    if($("#ptub_soluciones_").is(":visible")) $("#ptub_soluciones_").hide(""); 
+                    
+                    //P&eacute;rdidas
+                    if($("#pmenor_concepto_").is(":visible")) $("#pmenor_concepto_").hide("");
+                    if($("#pmenor_ejercicios_").is(":visible")) $("#pmenor_ejercicios_").hide("");
+                    if($("#pmenor_tablas_").is(":visible")) $("#pmenor_tablas_").hide("");
+                    if($("#pmenor_soluciones_").is(":visible")) $("#pmenor_soluciones_").hide("");                    
+                    
+                    //bernoulli
+                    if($("#bernoulli_concepto_").is(":visible")) $("#bernoulli_concepto_").hide("");
+                    if($("#bernoulli_ejercicios_").is(":visible")) $("#bernoulli_ejercicios_").hide("");
+                    if($("#bernoulli_soluciones_").is(":visible")) $("#bernoulli_soluciones_").hide("");
+                    
+                    //reynold
+                    if($("#reynold_ejercicios_").is(":visible")) $("#reynold_ejercicios_").hide("");
+					if($("#reynold_soluciones_").is(":visible")) $("#reynold_soluciones_").hide("");
+                    if($("#reynold_concepto_").is(":hidden")) $("#reynold_concepto_").show("slide");
+                });
+
+                // REYNOLDS - EJERCICIOS *********************************\\
+                $("#reynold_ejercicios").click(function(){                    
+                    //index
+                    if($("#index").is(":visible")) $("#index").hide("");
+                    
+                    //tuber&iacute;as
+                    if($("#ptub_concepto_").is(":visible")) $("#ptub_concepto_").hide("");
+                    if($("#ptub_tablas_").is(":visible")) $("#ptub_tablas_").hide("");
+                    if($("#ptub_graficas_").is(":visible")) $("#ptub_graficas_").hide("");
+                    if($("#ptub_ejercicios_").is(":visible")) $("#ptub_ejercicios_").hide("");
+                    if($("#ptub_soluciones_").is(":visible")) $("#ptub_soluciones_").hide(""); 
+                    
+                    //P&eacute;rdidas
+                    if($("#pmenor_concepto_").is(":visible")) $("#pmenor_concepto_").hide("");
+                    if($("#pmenor_ejercicios_").is(":visible")) $("#pmenor_ejercicios_").hide("");
+                    if($("#pmenor_tablas_").is(":visible")) $("#pmenor_tablas_").hide("");
+                    if($("#pmenor_soluciones_").is(":visible")) $("#pmenor_soluciones_").hide("");                    
+                    
+                    //bernoulli
+                    if($("#bernoulli_concepto_").is(":visible")) $("#bernoulli_concepto_").hide("");
+                    if($("#bernoulli_ejercicios_").is(":visible")) $("#bernoulli_ejercicios_").hide("");
+                    if($("#bernoulli_soluciones_").is(":visible")) $("#bernoulli_soluciones_").hide("");
+                    
+                    //reynold               
+                    if($("#reynold_concepto_").is(":visible")) $("#reynold_concepto_").hide("");
+					if($("#reynold_soluciones_").is(":visible")) $("#reynold_soluciones_").hide("");
+                    if($("#reynold_ejercicios_").is(":hidden")) $("#reynold_ejercicios_").show("slide");
+                });
+				
+				// REYNOLDS - SOLUCIONES *********************************\\
+                $("#reynold_soluciones").click(function(){                    
+                    //index
+                    if($("#index").is(":visible")) $("#index").hide("");
+                    
+                    //tuber&iacute;as
+                    if($("#ptub_concepto_").is(":visible")) $("#ptub_concepto_").hide("");
+                    if($("#ptub_tablas_").is(":visible")) $("#ptub_tablas_").hide("");
+                    if($("#ptub_graficas_").is(":visible")) $("#ptub_graficas_").hide("");
+                    if($("#ptub_ejercicios_").is(":visible")) $("#ptub_ejercicios_").hide("");
+                    if($("#ptub_soluciones_").is(":visible")) $("#ptub_soluciones_").hide("");
+                    
+                    //P&eacute;rdidas
+                    if($("#pmenor_concepto_").is(":visible")) $("#pmenor_concepto_").hide("");
+                    if($("#pmenor_ejercicios_").is(":visible")) $("#pmenor_ejercicios_").hide("");
+                    if($("#pmenor_tablas_").is(":visible")) $("#pmenor_tablas_").hide("");
+                    if($("#pmenor_soluciones_").is(":visible")) $("#pmenor_soluciones_").hide("");                    
+                    
+                    //bernoulli
+                    if($("#bernoulli_concepto_").is(":visible")) $("#bernoulli_concepto_").hide("");
+                    if($("#bernoulli_ejercicios_").is(":visible")) $("#bernoulli_ejercicios_").hide("");
+                    if($("#bernoulli_soluciones_").is(":visible")) $("#bernoulli_soluciones_").hide("");
+                    
+                    //reynold               
+                    if($("#reynold_concepto_").is(":visible")) $("#reynold_concepto_").hide("");
+                    if($("#reynold_ejercicios_").is(":visible")) $("#reynold_ejercicios_").hide("");
+					if($("#reynold_soluciones_").is(":hidden")) $("#reynold_soluciones_").show("slide");
+                });
+                
+                
+                /*******************************************************************/
+                /*************    P&eacute;rdidaS DE FRICCION POR tuber&iacute;aS    *************/
+                /*******************************************************************/
+                // P&eacute;rdidaS DE FRICCION POR tuber&iacute;aS - CONCEPTO *******************\\
+                $("#ptub_concepto").click(function(){
+                    //index
+                    if($("#index").is(":visible")) $("#index").hide(""); 
+                    
+                    //reynold
+                    if($("#reynold_concepto_").is(":visible")) $("#reynold_concepto_").hide("");
+                    if($("#reynold_ejercicios_").is(":visible")) $("#reynold_ejercicios_").hide("");
+					if($("#reynold_soluciones_").is(":visible")) $("#reynold_soluciones_").hide("");
+                                   
+                    //P&eacute;rdidas
+                    if($("#pmenor_concepto_").is(":visible")) $("#pmenor_concepto_").hide("");
+                    if($("#pmenor_ejercicios_").is(":visible")) $("#pmenor_ejercicios_").hide("");
+                    if($("#pmenor_tablas_").is(":visible")) $("#pmenor_tablas_").hide("");
+                    if($("#pmenor_soluciones_").is(":visible")) $("#pmenor_soluciones_").hide(""); 
+                    
+                    //bernoulli
+                    if($("#bernoulli_concepto_").is(":visible")) $("#bernoulli_concepto_").hide("");
+                    if($("#bernoulli_ejercicios_").is(":visible")) $("#bernoulli_ejercicios_").hide("");
+                    if($("#bernoulli_soluciones_").is(":visible")) $("#bernoulli_soluciones_").hide("");
+                    
+                    //tuber&iacute;as 
+                    if($("#ptub_tablas_").is(":visible")) $("#ptub_tablas_").hide("");
+                    if($("#ptub_graficas_").is(":visible")) $("#ptub_graficas_").hide("");
+                    if($("#ptub_ejercicios_").is(":visible")) $("#ptub_ejercicios_").hide("");
+                    if($("#ptub_soluciones_").is(":visible")) $("#ptub_soluciones_").hide("");
+                    if($("#ptub_concepto_").is(":hidden")) $("#ptub_concepto_").show("slide");
+                });
+                
+                
+                // P&eacute;rdidaS DE FRICCION POR tuber&iacute;aS - TABLAS ************\\
+                $("#ptub_tablas").click(function(){
+                    //index
+                    if($("#index").is(":visible")) $("#index").hide(""); 
+                    
+                    //reynold
+                    if($("#reynold_concepto_").is(":visible")) $("#reynold_concepto_").hide("");
+                    if($("#reynold_ejercicios_").is(":visible")) $("#reynold_ejercicios_").hide("");
+					if($("#reynold_soluciones_").is(":visible")) $("#reynold_soluciones_").hide("");
+                   
+                    //P&eacute;rdidas
+                    if($("#pmenor_concepto_").is(":visible")) $("#pmenor_concepto_").hide("");
+                    if($("#pmenor_ejercicios_").is(":visible")) $("#pmenor_ejercicios_").hide("");
+                    if($("#pmenor_tablas_").is(":visible")) $("#pmenor_tablas_").hide("");
+                    if($("#pmenor_soluciones_").is(":visible")) $("#pmenor_soluciones_").hide("");
+                    
+                    //bernoulli
+                    if($("#bernoulli_concepto_").is(":visible")) $("#bernoulli_concepto_").hide("");
+                    if($("#bernoulli_ejercicios_").is(":visible")) $("#bernoulli_ejercicios_").hide("");
+                    if($("#bernoulli_soluciones_").is(":visible")) $("#bernoulli_soluciones_").hide("");
+                                        
+                    //tuber&iacute;as
+                    if($("#ptub_concepto_").is(":visible")) $("#ptub_concepto_").hide("");
+                    if($("#ptub_graficas_").is(":visible")) $("#ptub_graficas_").hide("");
+                    if($("#ptub_ejercicios_").is(":visible")) $("#ptub_ejercicios_").hide("");
+                    if($("#ptub_soluciones_").is(":visible")) $("#ptub_soluciones_").hide("");
+                    if($("#ptub_tablas_").is(":hidden")) $("#ptub_tablas_").show("slide");
+                });
+                
+                // P&eacute;rdidaS DE FRICCION POR tuber&iacute;aS - GRAFICAS **********\\
+                $("#ptub_graficas").click(function(){
+                    //index
+                    if($("#index").is(":visible")) $("#index").hide(""); 
+                    
+                    //reynold
+                    if($("#reynold_concepto_").is(":visible")) $("#reynold_concepto_").hide("");
+                    if($("#reynold_ejercicios_").is(":visible")) $("#reynold_ejercicios_").hide("");
+					if($("#reynold_soluciones_").is(":visible")) $("#reynold_soluciones_").hide("");
+                   
+                    //P&eacute;rdidas
+                    if($("#pmenor_concepto_").is(":visible")) $("#pmenor_concepto_").hide("");
+                    if($("#pmenor_ejercicios_").is(":visible")) $("#pmenor_ejercicios_").hide("");
+                    if($("#pmenor_tablas_").is(":visible")) $("#pmenor_tablas_").hide("");
+                    if($("#pmenor_soluciones_").is(":visible")) $("#pmenor_soluciones_").hide("");
+                    
+                    //bernoulli
+                    if($("#bernoulli_concepto_").is(":visible")) $("#bernoulli_concepto_").hide("");
+                    if($("#bernoulli_ejercicios_").is(":visible")) $("#bernoulli_ejercicios_").hide("");
+                    if($("#bernoulli_soluciones_").is(":visible")) $("#bernoulli_soluciones_").hide(""); 
+                    
+                    //tuber&iacute;as
+                    if($("#ptub_concepto_").is(":visible")) $("#ptub_concepto_").hide("");
+                    if($("#ptub_tablas_").is(":visible")) $("#ptub_tablas_").hide("");
+                    if($("#ptub_ejercicios_").is(":visible")) $("#ptub_ejercicios_").hide("");
+                    if($("#ptub_soluciones_").is(":visible")) $("#ptub_soluciones_").hide("");
+                    if($("#ptub_graficas_").is(":hidden")) $("#ptub_graficas_").show("slide");
+                });
+                
+                // P&eacute;rdidaS DE FRICCION POR tuber&iacute;aS - EJERCICIOS **********\\
+                $("#ptub_ejercicios").click(function(){
+                    //index
+                    if($("#index").is(":visible")) $("#index").hide(""); 
+                    
+                    //reynold
+                    if($("#reynold_concepto_").is(":visible")) $("#reynold_concepto_").hide("");
+                    if($("#reynold_ejercicios_").is(":visible")) $("#reynold_ejercicios_").hide("");
+					if($("#reynold_soluciones_").is(":visible")) $("#reynold_soluciones_").hide("");
+                   
+                    //P&eacute;rdidas
+                    if($("#pmenor_concepto_").is(":visible")) $("#pmenor_concepto_").hide("");
+                    if($("#pmenor_ejercicios_").is(":visible")) $("#pmenor_ejercicios_").hide("");
+                    if($("#pmenor_soluciones_").is(":visible")) $("#pmenor_soluciones_").hide(""); 
+                    if($("#pmenor_tablas_").is(":visible")) $("#pmenor_tablas_").hide("");
+                    
+                    //bernoulli
+                    if($("#bernoulli_concepto_").is(":visible")) $("#bernoulli_concepto_").hide("");
+                    if($("#bernoulli_ejercicios_").is(":visible")) $("#bernoulli_ejercicios_").hide("");
+                    if($("#bernoulli_soluciones_").is(":visible")) $("#bernoulli_soluciones_").hide("");
+                    
+                    //tuber&iacute;as
+                    if($("#ptub_concepto_").is(":visible")) $("#ptub_concepto_").hide("");
+                    if($("#ptub_tablas_").is(":visible")) $("#ptub_tablas_").hide("");
+                    if($("#ptub_graficas_").is(":visible")) $("#ptub_graficas_").hide("");
+                    if($("#ptub_soluciones_").is(":visible")) $("#ptub_soluciones_").hide("");
+                    if($("#ptub_ejercicios_").is(":hidden")) $("#ptub_ejercicios_").show("slide");
+                });
+                
+                // P&eacute;rdidaS DE FRICCION POR tuber&iacute;aS - SOLUCIONES **********\\
+                $("#ptub_soluciones").click(function(){
+                    //index
+                    if($("#index").is(":visible")) $("#index").hide(""); 
+                    
+                    //reynold
+                    if($("#reynold_concepto_").is(":visible")) $("#reynold_concepto_").hide("");
+                    if($("#reynold_ejercicios_").is(":visible")) $("#reynold_ejercicios_").hide("");
+					if($("#reynold_soluciones_").is(":visible")) $("#reynold_soluciones_").hide("");
+                   
+                    //P&eacute;rdidas
+                    if($("#pmenor_concepto_").is(":visible")) $("#pmenor_concepto_").hide("");
+                    if($("#pmenor_ejercicios_").is(":visible")) $("#pmenor_ejercicios_").hide("");
+                    if($("#pmenor_soluciones_").is(":visible")) $("#pmenor_soluciones_").hide(""); 
+                    if($("#pmenor_tablas_").is(":visible")) $("#pmenor_tablas_").hide("");
+                    
+                    //bernoulli
+                    if($("#bernoulli_concepto_").is(":visible")) $("#bernoulli_concepto_").hide("");
+                    if($("#bernoulli_ejercicios_").is(":visible")) $("#bernoulli_ejercicios_").hide("");
+                    if($("#bernoulli_soluciones_").is(":visible")) $("#bernoulli_soluciones_").hide("");
+                                       
+                    //tuber&iacute;as
+                    if($("#ptub_concepto_").is(":visible")) $("#ptub_concepto_").hide("");
+                    if($("#ptub_tablas_").is(":visible")) $("#ptub_tablas_").hide("");
+                    if($("#ptub_graficas_").is(":visible")) $("#ptub_graficas_").hide("");
+                    if($("#ptub_ejercicios_").is(":visible")) $("#ptub_ejercicios_").hide("");                    
+                    if($("#ptub_soluciones_").is(":hidden")) $("#ptub_soluciones_").show("slide");
+                    
+                });
+                
+                
+                /*******************************************************************/
+                /***************    P&eacute;rdidaS MENORES DE tuber&iacute;aS    ****************/
+                /*******************************************************************/
+                // P&eacute;rdidaS MENORES - CONCEPTO ************************************\\
+                $("#pmenor_concepto").click(function(){
+                    //index
+                    if($("#index").is(":visible")) $("#index").hide(""); 
+                    
+                    //reynold
+                    if($("#reynold_concepto_").is(":visible")) $("#reynold_concepto_").hide("");
+                    if($("#reynold_ejercicios_").is(":visible")) $("#reynold_ejercicios_").hide("");
+					if($("#reynold_soluciones_").is(":visible")) $("#reynold_soluciones_").hide("");
+                   
+                    //tuber&iacute;as
+                    if($("#ptub_concepto_").is(":visible")) $("#ptub_concepto_").hide("");
+                    if($("#ptub_tablas_").is(":visible")) $("#ptub_tablas_").hide("");
+                    if($("#ptub_graficas_").is(":visible")) $("#ptub_graficas_").hide("");
+                    if($("#ptub_ejercicios_").is(":visible")) $("#ptub_ejercicios_").hide("");
+                    if($("#ptub_soluciones_").is(":visible")) $("#ptub_soluciones_").hide("");
+                    
+                    //bernoulli
+                    if($("#bernoulli_concepto_").is(":visible")) $("#bernoulli_concepto_").hide("");
+                    if($("#bernoulli_ejercicios_").is(":visible")) $("#bernoulli_ejercicios_").hide("");
+                    if($("#bernoulli_soluciones_").is(":visible")) $("#bernoulli_soluciones_").hide("");
+                    
+                    //P&eacute;rdidas
+                    if($("#pmenor_ejercicios_").is(":visible")) $("#pmenor_ejercicios_").hide("");
+                    if($("#pmenor_tablas_").is(":visible")) $("#pmenor_tablas_").hide("");
+                    if($("#pmenor_soluciones_").is(":visible")) $("#pmenor_soluciones_").hide(""); 
+                    if($("#pmenor_concepto_").is(":hidden")) $("#pmenor_concepto_").show("slide");
+                });
+                
+                // P&eacute;rdidaS MENORES - TABLAS ************************************\\
+                $("#pmenor_tablas").click(function(){
+                    //index
+                    if($("#index").is(":visible")) $("#index").hide(""); 
+                    
+                    //reynold
+                    if($("#reynold_concepto_").is(":visible")) $("#reynold_concepto_").hide("");
+                    if($("#reynold_ejercicios_").is(":visible")) $("#reynold_ejercicios_").hide("");
+					if($("#reynold_soluciones_").is(":visible")) $("#reynold_soluciones_").hide("");
+                   
+                    //tuber&iacute;as
+                    if($("#ptub_concepto_").is(":visible")) $("#ptub_concepto_").hide("");
+                    if($("#ptub_tablas_").is(":visible")) $("#ptub_tablas_").hide("");
+                    if($("#ptub_graficas_").is(":visible")) $("#ptub_graficas_").hide("");
+                    if($("#ptub_ejercicios_").is(":visible")) $("#ptub_ejercicios_").hide("");
+                    if($("#ptub_soluciones_").is(":visible")) $("#ptub_soluciones_").hide("");
+                    
+                    //bernoulli
+                    if($("#bernoulli_concepto_").is(":visible")) $("#bernoulli_concepto_").hide("");
+                    if($("#bernoulli_ejercicios_").is(":visible")) $("#bernoulli_ejercicios_").hide("");
+                    if($("#bernoulli_soluciones_").is(":visible")) $("#bernoulli_soluciones_").hide("");
+                                        
+                    //P&eacute;rdidas
+                    if($("#pmenor_concepto_").is(":visible")) $("#pmenor_concepto_").hide("");
+                    if($("#pmenor_ejercicios_").is(":visible")) $("#pmenor_ejercicios_").hide("");
+                    if($("#pmenor_soluciones_").is(":visible")) $("#pmenor_soluciones_").hide(""); 
+                    if($("#pmenor_tablas_").is(":hidden")) $("#pmenor_tablas_").show("slide");
+                });
+                
+                // P&eacute;rdidaS MENORES - EJERCICIOS ************************************\\
+                $("#pmenor_ejercicios").click(function(){
+                    //index
+                    if($("#index").is(":visible")) $("#index").hide(""); 
+                    
+                    //reynold
+                    if($("#reynold_concepto_").is(":visible")) $("#reynold_concepto_").hide("");
+                    if($("#reynold_ejercicios_").is(":visible")) $("#reynold_ejercicios_").hide("");
+					if($("#reynold_soluciones_").is(":visible")) $("#reynold_soluciones_").hide("");
+                   
+                    //tuber&iacute;as
+                    if($("#ptub_concepto_").is(":visible")) $("#ptub_concepto_").hide("");
+                    if($("#ptub_tablas_").is(":visible")) $("#ptub_tablas_").hide("");
+                    if($("#ptub_graficas_").is(":visible")) $("#ptub_graficas_").hide("");
+                    if($("#ptub_ejercicios_").is(":visible")) $("#ptub_ejercicios_").hide("");
+                    if($("#ptub_soluciones_").is(":visible")) $("#ptub_soluciones_").hide("");
+                    
+                    //bernoulli
+                    if($("#bernoulli_concepto_").is(":visible")) $("#bernoulli_concepto_").hide("");
+                    if($("#bernoulli_ejercicios_").is(":visible")) $("#bernoulli_ejercicios_").hide("");
+                    if($("#bernoulli_soluciones_").is(":visible")) $("#bernoulli_soluciones_").hide("");
+                                        
+                    //P&eacute;rdidas
+                    if($("#pmenor_concepto_").is(":visible")) $("#pmenor_concepto_").hide("");
+                    if($("#pmenor_tablas_").is(":visible")) $("#pmenor_tablas_").hide("");
+                    if($("#pmenor_soluciones_").is(":visible")) $("#pmenor_soluciones_").hide("");                   
+                    if($("#pmenor_ejercicios_").is(":hidden")) $("#pmenor_ejercicios_").show("slide");
+                });
+                
+                // P&eacute;rdidaS MENORES - SOLUCIONES ************************************\\
+                $("#pmenor_soluciones").click(function(){
+                    //index
+                    if($("#index").is(":visible")) $("#index").hide(""); 
+                    
+
+                    if($("#reynold_concepto_").is(":visible")) $("#reynold_concepto_").hide("");
+                    if($("#reynold_ejercicios_").is(":visible")) $("#reynold_ejercicios_").hide("");
+					if($("#reynold_soluciones_").is(":visible")) $("#reynold_soluciones_").hide("");
+                   
+                    //tuber&iacute;as
+                    if($("#ptub_concepto_").is(":visible")) $("#ptub_concepto_").hide("");
+                    if($("#ptub_tablas_").is(":visible")) $("#ptub_tablas_").hide("");
+                    if($("#ptub_graficas_").is(":visible")) $("#ptub_graficas_").hide("");
+                    if($("#ptub_ejercicios_").is(":visible")) $("#ptub_ejercicios_").hide("");
+                    if($("#ptub_soluciones_").is(":visible")) $("#ptub_soluciones_").hide("");
+                    
+                    //bernoulli
+                    if($("#bernoulli_concepto_").is(":visible")) $("#bernoulli_concepto_").hide("");
+                    if($("#bernoulli_ejercicios_").is(":visible")) $("#bernoulli_ejercicios_").hide("");
+                    if($("#bernoulli_soluciones_").is(":visible")) $("#bernoulli_soluciones_").hide("");
+                    
+                    //P&eacute;rdidas
+                    if($("#pmenor_concepto_").is(":visible")) $("#pmenor_concepto_").hide("");
+                    if($("#pmenor_tablas_").is(":visible")) $("#pmenor_tablas_").hide("");
+                    if($("#pmenor_ejercicios_").is(":visible")) $("#pmenor_ejercicios_").hide("");
+                    if($("#pmenor_soluciones_").is(":hidden")) $("#pmenor_soluciones_").show("slide");                    
+                    
+                });
+                
+                /*******************************************************************/
+                /*************************    BERNOULLI    *************************/
+                /*******************************************************************/
+                // BERNOULLI - CONCEPTO *******************************************\\
+                $("#bernoulli_concepto").click(function(){
+                    //index
+                    if($("#index").is(":visible")) $("#index").hide(""); 
+                    
+                    //reynold
+                    if($("#reynold_concepto_").is(":visible")) $("#reynold_concepto_").hide("");
+                    if($("#reynold_ejercicios_").is(":visible")) $("#reynold_ejercicios_").hide("");
+					if($("#reynold_soluciones_").is(":visible")) $("#reynold_soluciones_").hide("");
+                   
+                    //tuber&iacute;as
+                    if($("#ptub_concepto_").is(":visible")) $("#ptub_concepto_").hide("");
+                    if($("#ptub_tablas_").is(":visible")) $("#ptub_tablas_").hide("");
+                    if($("#ptub_graficas_").is(":visible")) $("#ptub_graficas_").hide("");
+                    if($("#ptub_ejercicios_").is(":visible")) $("#ptub_ejercicios_").hide("");
+                    if($("#ptub_soluciones_").is(":visible")) $("#ptub_soluciones_").hide("");
+                    
+                    //P&eacute;rdidas
+                    if($("#pmenor_ejercicios_").is(":visible")) $("#pmenor_ejercicios_").hide("");
+                    if($("#pmenor_tablas_").is(":visible")) $("#pmenor_tablas_").hide("");
+                    if($("#pmenor_soluciones_").is(":visible")) $("#pmenor_soluciones_").hide(""); 
+                    if($("#pmenor_concepto_").is(":visible")) $("#pmenor_concepto_").hide("");
+                    
+                    //bernoulli
+                    if($("#bernoulli_ejercicios_").is(":visible")) $("#bernoulli_ejercicios_").hide("");
+                    if($("#bernoulli_soluciones_").is(":visible")) $("#bernoulli_soluciones_").hide("");
+                    if($("#bernoulli_concepto_").is(":hidden")) $("#bernoulli_concepto_").show("slide");
+                    
+                });
+                
+                 // BERNOULLI - EJERCICIOS *****************************************\\
+                $("#bernoulli_ejercicios").click(function(){
+                    //index
+                    if($("#index").is(":visible")) $("#index").hide(""); 
+                    
+                    //reynold
+                    if($("#reynold_concepto_").is(":visible")) $("#reynold_concepto_").hide("");
+                    if($("#reynold_ejercicios_").is(":visible")) $("#reynold_ejercicios_").hide("");
+					if($("#reynold_soluciones_").is(":visible")) $("#reynold_soluciones_").hide("");
+                   
+                    //tuber&iacute;as
+                    if($("#ptub_concepto_").is(":visible")) $("#ptub_concepto_").hide("");
+                    if($("#ptub_tablas_").is(":visible")) $("#ptub_tablas_").hide("");
+                    if($("#ptub_graficas_").is(":visible")) $("#ptub_graficas_").hide("");
+                    if($("#ptub_ejercicios_").is(":visible")) $("#ptub_ejercicios_").hide("");
+                    if($("#ptub_soluciones_").is(":visible")) $("#ptub_soluciones_").hide("");
+                    
+                    //P&eacute;rdidas
+                    if($("#pmenor_ejercicios_").is(":visible")) $("#pmenor_ejercicios_").hide("");
+                    if($("#pmenor_tablas_").is(":visible")) $("#pmenor_tablas_").hide("");
+                    if($("#pmenor_soluciones_").is(":visible")) $("#pmenor_soluciones_").hide(""); 
+                    if($("#pmenor_concepto_").is(":visible")) $("#pmenor_concepto_").hide("");
+                    
+                    //bernoulli
+                    if($("#bernoulli_concepto_").is(":visible")) $("#bernoulli_concepto_").hide("");
+                    if($("#bernoulli_soluciones_").is(":visible")) $("#bernoulli_soluciones_").hide("");
+                    if($("#bernoulli_ejercicios_").is(":hidden")) $("#bernoulli_ejercicios_").show("slide");
+                    
+                });
+                
+                 // BERNOULLI - SOLUCIONES *****************************************\\
+                $("#bernoulli_soluciones").click(function(){
+                    //index
+                    if($("#index").is(":visible")) $("#index").hide(""); 
+                    
+                    //reynold
+                    if($("#reynold_concepto_").is(":visible")) $("#reynold_concepto_").hide("");
+                    if($("#reynold_ejercicios_").is(":visible")) $("#reynold_ejercicios_").hide("");
+					if($("#reynold_soluciones_").is(":visible")) $("#reynold_soluciones_").hide("");
+                   
+                    //tuber&iacute;as
+                    if($("#ptub_concepto_").is(":visible")) $("#ptub_concepto_").hide("");
+                    if($("#ptub_tablas_").is(":visible")) $("#ptub_tablas_").hide("");
+                    if($("#ptub_graficas_").is(":visible")) $("#ptub_graficas_").hide("");
+                    if($("#ptub_ejercicios_").is(":visible")) $("#ptub_ejercicios_").hide("");
+                    if($("#ptub_soluciones_").is(":visible")) $("#ptub_soluciones_").hide("");
+                    
+                    //P&eacute;rdidas
+                    if($("#pmenor_ejercicios_").is(":visible")) $("#pmenor_ejercicios_").hide("");
+                    if($("#pmenor_tablas_").is(":visible")) $("#pmenor_tablas_").hide("");
+                    if($("#pmenor_soluciones_").is(":visible")) $("#pmenor_soluciones_").hide(""); 
+                    if($("#pmenor_concepto_").is(":visible")) $("#pmenor_concepto_").hide("");
+                    
+                    //bernoulli
+                    if($("#bernoulli_concepto_").is(":visible")) $("#bernoulli_concepto_").hide("");
+                    if($("#bernoulli_ejercicios_").is(":visible")) $("#bernoulli_ejercicios_").hide("");
+                    if($("#bernoulli_soluciones_").is(":hidden")) $("#bernoulli_soluciones_").show("slide");
+                });
+                
+                
+                
+           });// end readyfunction...              
+        </script>
+    </head>
+
+    <body class="preview" data-spy="scroll" data-target=".subnav" data-offset="80" onLoad="">        
+        <!-- Navbar *************************************************************|| -->    
+
+            <div class="container">        
+                <div class="navbar">
+                    <div class="navbar-inner"> 
+                        <!-- div class="nav-collapse" -->                          
+                        <ul class="nav">
+                            <li class="active"><a href="#" id="idx">Home</a></li>            
+                                
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">N&deg; de Reynolds<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" id="reynold_concepto"><i class="icon-edit"></i>Concepto</a></li>
+                                    <li><a href="#" id="reynold_ejercicios"><i class="icon-edit"></i>Ejercicios</a></li>
+                                    <li><a href="#" id="reynold_soluciones"><i class="icon-edit"></i>Soluciones</a></li>
+                                    
+                                </ul>
+                            </li>
+                            
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">P&eacute;rdidas de Energia x tuber&iacute;as<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" id="ptub_concepto"><i class="icon-edit"></i>Concepto</a></li>
+                                    <li><a href="#" id="ptub_tablas"><i class="icon-edit"></i>Tablas</a></li>
+                                    <li><a href="#" id="ptub_graficas"><i class="icon-edit"></i>Graficas</a></li>
+                                    <li><a href="#" id="ptub_ejercicios"><i class="icon-edit"></i>Ejercicios</a></li>
+                                    <li><a href="#" id="ptub_soluciones"><i class="icon-edit"></i>Soluciones</a></li>
+                                    
+                               </ul>
+                            </li>
+                            
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">P&eacute;rdidas Menores<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" id="pmenor_concepto"><i class="icon-edit"></i>Concepto</a></li>
+                                    <li><a href="#" id="pmenor_tablas"><i class="icon-edit"></i>Tablas</a></li>
+                                    <li><a href="#" id="pmenor_ejercicios"><i class="icon-edit"></i>Ejercicios</a></li>
+                                    <li><a href="#" id="pmenor_soluciones"><i class="icon-edit"></i>Soluciones</a></li>
+                                </ul>
+                            </li> 
+                            
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bernoulli<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" id="bernoulli_concepto"><i class="icon-edit"></i>Concepto</a></li>
+                                    <li><a href="#" id="bernoulli_ejercicios"><i class="icon-edit"></i>Ejercicios</b></a></li>
+                                    <li><a href="#" id="bernoulli_soluciones"><i class="icon-edit"></i>Soluciones</b></a></li>
+                                </ul>
+                            </li>                       
+                        </ul>
+                    </div>                 
+                </div><!-- /navbar-inner -->
+            </div> 
+    
+    
+    
+    <div class="container">
+
+    <div class="content">    
+    
+    <article id="index">          
+        <div class="row">
+            <div class="span9">
+                <div class="alert alert-info">
+                    <h4 class="alert-heading"><b>MENSAJE</b></h4>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Material instruccional computarizado para la ense&ntilde;anza y aprendizaje te&oacute;rico-pr&aacute;ctico de la din&aacute;mica de los fluidos en la asignatura mec&aacute;nica de los fluidos del <b>PNF</b> de la especialidad ingenier&iacute;a de materiales industriales de Universidad Polit&eacute;cnica de I.U.T.Valencia.</p></div>
+            </div>
+        </div>
+        <center><img src="img/idx.jpg"/></center>                        
+    </article>
+    
+    
+<!-- **********************************************************||
+**** MENU REYNOLDS ********************************************||
+**************************************************************-->
+    
+<article id="reynold_concepto_"> 
+        <div class="alert alert-info">
+        <!-- a class="close">&times;</a -->
+        <p><b><i>El N&uacute;mero de Reynolds</i></b> relaciona la densidad, viscosidad, 
+        velocidad y dimensi&oacute;n t&iacute;pica de un flujo en una 
+        expresi&oacute;n adimensional, que interviene en n&uacute;merosos problemas 
+        de din&aacute;mica de fluidos. Dicho n&uacute;mero o combinaci&oacute;n 
+        adimensional aparece en muchos casos relacionado con el hecho de que 
+        el flujo pueda considerarse laminar (n&uacute;mero de Reynolds 
+        peque&ntilde;o) o turbulento (n&uacute;mero de Reynolds grande).</p>
+        </div>
+        <p>Para un fluido que circula por el interior de una tuber&iacute;a 
+        circular recta, el <b><i>N&uacute;mero de Reynolds</i></b> viene dado por:</p>
+        <img src="img/reynolds/img01.png" />
+        
+        <p>Donde:</p>
+        <p><img src="img/reynolds/img02.png" /> = densidad del fluido</p>
+        <p><img src="img/reynolds/img03.png" /> = velocidad caracter&iacute;stica del fluido</p>
+        <p><img src="img/reynolds/img04.png" /> = di&aacute;metro de la tuber&iacute;a a trav&eacute;s de la cual circula el fluido o longitud caracter&iacute;stica del sistema</p>
+        <p><img src="img/reynolds/img05.png" /> = viscosidad din&aacute;mica del fluido</p>
+        <p><img src="img/reynolds/img06.png" /> = viscosidad cinem&aacute;tica del fluido</p>
+        <img src="img/reynolds/img07.png" />
+</article>
+
+<article id="reynold_ejercicios_">       
+    <div class="alert alert-info"><h4><b>Ejercicios<br/>Indique La Respuesta Correcta</b></h4></div>
+     <form id="frm_preguntaM1"> 
+        <h4>1)- Cuales son las caracteristicas de un fluido laminar</h4>
+        <p>A)<input type="radio" name="p1m1" id="p1m1" value="0"/> El fluido adquiere un comportamiento desordenado no estacionario y tridimensional.</p>
+        <p>B)<input type="radio" name="p1m1" id="p1m1" value="1"/> El Fluido es Cuasiest&aacute;tico y se comporta como si estuviera formado por laminas delgadas.</p> 
+        <p>C)<input type="radio" name="p1m1" id="p1m1" value="2"/> El fluido pierde estabilidad y forma peque&ntilde;as ondulaciones.</p>
+        <hr />
+        
+        <h4>2)- Cuales son las caracteristicas de un fluido turbulento</h4>
+        <p>A)<input type="radio" name="p2m1" id="p2m1" value="0"/> El fluido adquiere un comportamiento desordenado no estacionario y tridimensional.</p>
+        <p>B)<input type="radio" name="p2m1" id="p2m1" value="1"/> El Fluido es Cuasiest&aacute;tico y se comporta como si estuviera formado por laminas delgadas.</p> 
+        <p>C)<input type="radio" name="p2m1" id="p2m1" value="2"/> El fluido pierde estabilidad y forma peque&ntilde;as ondulaciones.</p>
+        <hr />
+        
+        <h4>3)- El rango del n&uacute;mero de Reynolds para un fluido turbulento es:</h4>
+        <p>A)<input type="radio" name="p3m1" id="p3m1" value="0"/> <img src="img/reynolds/re.png" /><img src="img/reynolds/mayorq.jpg" />4001</p>
+        <p>B)<input type="radio" name="p3m1" id="p3m1" value="1"/> <img src="img/reynolds/re.png" /><img src="img/reynolds/menorq.jpg" />2000</p> 
+        <p>C)<input type="radio" name="p3m1" id="p3m1" value="2"/> 2000<img src="img/reynolds/menorq.jpg" /><img src="img/reynolds/re.png" /><img src="img/reynolds/menorq.jpg" />4000</p>
+        <hr />
+        
+        <h4>4)- El rango del n&uacute;mero de Reynolds para un fluido Laminar es:</h4>
+        <p>A)<input type="radio" name="p4m1" id="p4m1" value="0"/> <img src="img/reynolds/re.png" /><img src="img/reynolds/mayorq.jpg" />4001</p>
+        <p>B)<input type="radio" name="p4m1" id="p4m1" value="1"/> <img src="img/reynolds/re.png" /><img src="img/reynolds/menorq.jpg" />2000</p> 
+        <p>C)<input type="radio" name="p4m1" id="p4m1" value="2"/> 2000<img src="img/reynolds/menorq.jpg" /><img src="img/reynolds/re.png" /><img src="img/reynolds/menorq.jpg" />4000</p>
+        <hr />
+        
+        <h4>5)- Se&ntilde;ale el tipo de r&eacute;gimen: para ello <b>El Bachiller</b> debe calcular en un papel el n&uacute;mero de Reynolds para un fluido de <img src="img/reynolds/img08.jpg" /> y  <img src="img/reynolds/img09.jpg" /> donde la velocidad y el di&aacute;metro son los siguientes:</h4>
+        <table>
+        	<tr>
+            	<th>N&deg;</th>
+                <th>Pregunta</th>
+                <th>Soluci&oacute;n</th>
+            </tr>
+            <tr>
+            	<td>A)</td>
+                <td><img src="img/reynolds/img10.jpg" /></td>
+                <td><input type="radio" name="p5m1" id="p5m1" value="0"/>Laminar | 
+                <input type="radio" name="p5m1" id="p5m1" value="1"/>Turbulento</td>
+            </tr>
+            <tr>
+            	<td>B)</td>
+            	<td><img src="img/reynolds/img11.jpg" /></td>
+                <td><input type="radio" name="p6m1" id="p6m1" value="0"/>Laminar | 
+                <input type="radio" name="p6m1" id="p6m1" value="1"/>Turbulento</td>
+            </tr>
+        </table>
+        <hr />
+    </form>        
+<script type="text/javascript">
+$(document).ready(function(){
+    var p1m1=$('input[type=radio][name=p1m1]');
+    var p2m1=$('input[type=radio][name=p2m1]');
+    var p3m1=$('input[type=radio][name=p3m1]');
+    var p4m1=$('input[type=radio][name=p4m1]');
+    var p5m1=$('input[type=radio][name=p5m1]');
+    var p6m1=$('input[type=radio][name=p6m1]');
+    
+	$(p1m1).change(function () {     
+    	if ($(this).val()!=1){alert("Respuesta Incorrecta, Verifiquela");for (i=0; i<p1m1.length; i++){p1m1[i].checked=false;}}
+    });
+	
+	$(p2m1).change(function () {
+		if ($(this).val()!=0){alert("Respuesta Errada, Verifiquela");for (i=0; i<p2m1.length; i++){p2m1[i].checked=false;}}
+    });
+            
+    $(p3m1).change(function () {     
+        if ($(this).val()!=0){alert("Respuesta Errada, Verifiquela");for (i=0; i<p3m1.length; i++){p3m1[i].checked=false;}}
+    });
+            
+    $(p4m1).change(function () {     
+        if ($(this).val()!=2){alert("Respuesta Errada, Verifiquela");for (i=0; i<p4m1.length; i++){p4m1[i].checked=false;}}
+    });
+			
+	$(p5m1).change(function () {     
+        if ($(this).val()!=0){alert("Respuesta Errada, Verifiquela");for (i=0; i<p5m1.length; i++){p5m1[i].checked=false;}}
+    });
+	
+	$(p6m1).change(function () {     
+        if ($(this).val()!=1){alert("Respuesta Errada, Verifiquela");for (i=0; i<p6m1.length; i++){p6m1[i].checked=false;}}
+    });      
+});//end ready
+</script>
+    
+   
+</article>
+
+<article id="reynold_soluciones_">        
+    <div class="alert alert-info"><h4><b>Soluciones / Pregunta N&deg; 5) A &amp; B Respectivamente</b></h4></div>
+     <center><img src="img/reynolds/ejercicios.jpg"/></center>
+</article>
+
+
+<!-- **********************************************************||
+**** MENU P&eacute;rdidaS POR tuber&iacute;aS *******************************||
+**************************************************************-->
+
+<article id="ptub_concepto_">        
+    <div class="alert alert-info"><h4><b>P&eacute;rdida de Energias por tuber&iacute;as / Concepto</b></h4></div>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A medida que un fluido fluye por un conducto, tubo o alg&uacute;n otro dispositivo, ocurren p&eacute;rdidas de energ&iacute;a debido a la fricci&oacute;n que hay entre el liquido y la pared de la tuber&iacute;a; tales energ&iacute;as traen como resultado una disminuci&oacute;n de la presi&oacute;n entre dos puntos del sistema de flujo.
+    Una de las formulas m&aacute;s exctas para el c&aacute;lculo hidraulico es la ecuaci&oacute;n de Darcy-Weisbach.
+    La formula original es la siguiente:</p>
+    <img src="img/perdidas_tub/img1.jpg"/><br /><br />
+    
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;El coeficiente de fricci&oacute;n f es funci&oacute;n del n&uacute;mero de Reynolds (Re) y del coeficiente de rugosidad o rugosidad relativa de las paredes de la tuber&iacute;a (Er), en caso de que el fluido sea turbulento.
+    si el fluido es Laminar el coeficiente de fricci&oacute;n f se calcula a partir de f=64/Re.</p>
+</article>
+
+<article id="ptub_tablas_">        
+    <div class="alert alert-info"><h4><b>P&eacute;rdida de Energias por tuber&iacute;as / Tablas</b></h4></div>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La rugosidad absoluta de las tuber&iacute;as est&aacute;, de igual manera, tabulada, para los diferentes 
+    materiales, la rugosidad absoluta ser&aacute;:</p>
+    <center><img src="img/perdidas_tub/img2.jpg"/></center>
+</article>
+
+<article id="ptub_graficas_">        
+    <div class="alert alert-info"><h4><b>P&eacute;rdida de Energias por tuber&iacute;as / Graficas</b></h4></div>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;En la ecuaci&oacute;n de Darcy-Weisbach aparece el t&eacute;rmino <img src="img/perdidas_tub/img3.png"/> que representa el factor de fricci&oacute;n de Darcy, conocido tambi&eacute;n como coeficiente de fricci&oacute;n. El c&aacute;lculo de este coeficiente no es inmediato y no existe una &uacute;nica f&oacute;rmula para calcularlo en todas las situaciones posibles.</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Se pueden distinguir dos situaciones diferentes, el caso en que el flujo sea laminar y el caso en que el flujo sea turbulento. En el caso de flujo laminar se usa una de las expresiones de la ecuaci&oacute;n de Poiseuille; en el caso de flujo turbulento se puede usar la ecuaci&oacute;n de Colebrook-White adem&aacute;s de algunas otras c&oacute;mo ecuaci&oacute;n de Barr, ecuaci&oacute;n de Miller, ecuaci&oacute;n de Haaland.</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;En el caso de flujo laminar el factor de fricci&oacute;n depende &uacute;nicamente del n&uacute;mero de Reynolds. Para flujo turbulento, el factor de fricci&oacute;n depende tanto del n&uacute;mero de Reynolds como de la rugosidad relativa de la tuber&iacute;a, por eso en este caso se representa mediante una familia de curvas, una para cada valor del par&aacute;metro k/D, donde k es el valor de la rugosidad absoluta, es decir la longitud (habitualmente en mil&iacute;metros) de la rugosidad directamente medible en la tuber&iacute;a.</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;En la siguiente imagen se puede observar el aspecto del diagrama de Moody.</p>
+    <center><img src="img/perdidas_tub/moody.png"/></center>
+</article>
+
+
+<article id="ptub_ejercicios_">        
+    <div class="alert alert-info"><h4><b>P&eacute;rdida de Energias por tuber&iacute;as / Ejercicios</b></h4></div>
+    <form id="frm_preguntaM2"> 
+    
+    <h4>1)- Tomando en cuenta la tabla de rugoridad absoluta de tuber&iacute;as (<img src="img/perdidas_tub/img8.jpg"/>) determine en una hoja y se&ntilde;ale cual es la rugoridad relativa (<img src="img/perdidas_tub/img8.jpg"/>/D) en una tuber&iacute;a de 3 pulgadas de di&aacute;metro interno de acero comercial:</h4>
+        <p>A)<input type="radio" name="p1m2" id="p1m2" value="0"/>0.05905</p>
+        <p>B)<input type="radio" name="p1m2" id="p1m2" value="1"/>0.005905</p>        
+    <hr />
+    
+    <h4>2)- Fluye glicerina <img src="img/perdidas_tub/img3.jpg"/> en una tuber&iacute;a de polietileno de 160mm de di&aacute;metro interno a una velocidad promedio de 3.85m/s. Realice el calculo y se&ntilde;ale el verdadero factor de fricci&oacute;n:</h4>
+        <p>A)<input type="radio" name="p2m2" id="p2m2" value="0"/>0.79284</p>
+        <p>B)<input type="radio" name="p2m2" id="p2m2" value="1"/>0.0556</p>        
+    <hr />
+    
+    <h4>3)- Una vez calculado en una hoja se&ntilde;ale el factor de fricci&oacute;n si por una tuber&iacute;a de acero comercial de 2 pulgadas de di&aacute;metro interno fluye agua a 25&deg;c  <img src="img/perdidas_tub/img4.jpg"/> velocidad promedio 8.23m/s:</h4>
+        <p>A)<input type="radio" name="p3m2" id="p3m2" value="0"/>0.0001378</p>
+        <p>B)<input type="radio" name="p3m2" id="p3m2" value="1"/>0.037</p>        
+    
+    </form>
+<script type="text/javascript">
+$(document).ready(function(){
+    
+    var p1m2=$('input[type=radio][name=p1m2]');
+    var p2m2=$('input[type=radio][name=p2m2]');
+    var p3m2=$('input[type=radio][name=p3m2]');
+    
+	$(p1m2).change(function () {     
+    	if ($(this).val()!=1){alert("Respuesta Incorrecta, Verifiquela");for (i=0; i<p1m2.length; i++){p1m2[i].checked=false;}}
+    });
+	
+	$(p2m2).change(function () {
+		if ($(this).val()!=0){alert("Respuesta Errada, Verifiquela");for (i=0; i<p2m2.length; i++){p2m2[i].checked=false;}}
+    });
+            
+    $(p3m2).change(function () {     
+        if ($(this).val()!=1){alert("Respuesta Errada, Verifiquela");for (i=0; i<p3m2.length; i++){p3m2[i].checked=false;}}
+    });    
+});//end ready
+</script>
+    
+</article>
+
+<article id="ptub_soluciones_">        
+    <div class="alert alert-info"><h4><b>P&eacute;rdida de Energias por tuber&iacute;as / Soluciones</b></h4></div>
+    <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Soluci&oacute;n Ejercicio N&deg; 1.<br />
+        <center><img src="img/perdidas_tub/img5.jpg"/></center>
+    </p><hr />
+    
+    <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Soluci&oacute;n Ejercicio N&deg; 2.<br />
+        <center><img src="img/perdidas_tub/img6.jpg"/></center>
+    </p><hr />
+    
+    <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Soluci&oacute;n Ejercicio N&deg; 3.<br />
+        <center><img src="img/perdidas_tub/img7.jpg"/></center>
+    </p>
+</article>
+
+
+<!-- **********************************************************||
+**** MENU P&eacute;rdidaS MENORES ************************************||
+**************************************************************-->
+<article id="pmenor_concepto_">        
+    <div class="alert alert-info"><h4><b>P&eacute;rdida de Energias Menores / Concepto</b></h4></div>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La p&eacute;rdida de energia con proporcionalidad a la carga de la velocidad de fluido, conforme pasa por un codo, expansi&oacute;n o contracci&oacute;n de la uni&oacute;n del fluido o por una v&aacute;lvula</p>
+    <p>Por lo general los valores se representan a traves de la siguiente expresi&oacute;n:</p>
+    <center><img src="img/perdidas_men/img1.jpg"/></center>
+    <p>Donde</p>
+    <p><b>K:</b> Es el coeficiente de la resistencia de entrada del fluido a la tuber&iacute;a o salida de un fluido de una tuber&iacute;a o dep&oacute;sito est&aacute;tico</p>
+    <p>Velocidad promedio del flujo</p>
+    <p></p>
+</article>
+
+<article id="pmenor_tablas_">        
+    <div class="alert alert-info"><h4><b>P&eacute;rdida de Energias Menores / Tablas</b></h4></div>
+    
+    <h4>1)- Coeficiente de resistencia de entrada de fluido a tuber&iacute;a</h4>
+    <center>
+        <img src="img/perdidas_men/img2.jpg"/><br />
+        <p class="nota">Mecanica de Los Fluidos Robert Moot 6ta Edici&oacute;n - P293.</p>
+    </center><hr />
+    
+    <h4>2)- Coeficiente de resistencia de salida de un fluido de una tuber&iacute;a a un dep&oacute;sito est&aacute;tico</h4>
+    <center>
+        <img src="img/perdidas_men/img3.jpg"/><br />
+        <p class="nota">Mecanica de Los Fluidos Robert Moot 6ta Edici&oacute;n - P284.</p>
+    </center><hr />
+    
+    <h4>3)- Resistencia v&aacute;lvulas y acoplamientos expresados en Le/D</h4>
+    <center>
+        <img src="img/perdidas_men/img4.jpg"/><br />
+        <p class="nota">Mecanica de Los Fluidos Robert Moot 6ta Edici&oacute;n - P297.</p>
+    </center><hr />
+</article>
+
+
+<article id="pmenor_ejercicios_">        
+    <div class="alert alert-info"><h4><b>P&eacute;rdida de Energias Menores / Ejercicios</b></h4></div>
+    <form id="frm_preguntaM3">
+    <h4>1)- Determine y se&ntilde;ale la alternativa correspondiente a la p&eacute;rdida menores generadas por el siguiente esquema donde fluye agua a 25&deg;c <img src="img/perdidas_men/img6.jpg"/> a razon de 3m/s. La tuber&iacute;a es acero comercial de di&aacute;metro interno de 3 pulgadas.</h4>
+        <center><img src="img/perdidas_men/img5.jpg"/></center><br />
+        <p>A)<input type="radio" name="p1m3" id="p1m3" value="0"/>1.84m</p>
+        <p>B)<input type="radio" name="p1m3" id="p1m3" value="1"/>2.36m</p>        
+    <hr />
+    </form>
+<script type="text/javascript">
+$(document).ready(function(){
+    var p1m3=$('input[type=radio][name=p1m3]');
+	$(p1m3).change(function () {     
+    	if ($(this).val()!=1){alert("Respuesta Incorrecta, Verifiquela");for (i=0; i<p1m3.length; i++){p1m3[i].checked=false;}}
+    });
+  
+});//end ready
+</script>
+</article>
+
+<article id="pmenor_soluciones_">        
+    <div class="alert alert-info"><h4><b>P&eacute;rdida de Energias Menores / Soluciones</b></h4></div>
+    
+    <h4>1)- Soluci&oacute;n Ejercicio N&deg; 1</h4>
+        <center><img src="img/perdidas_men/img7.jpg"/></center>
+    </p><hr />
+</article>
+
+
+<!-- **********************************************************||
+**** MENU BERNOULLI *******************************************||
+**************************************************************-->
+<article id="bernoulli_concepto_">        
+    <div class="alert alert-info"><h4><b>Bernoulli / Concepto</b></h4></div>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Describe el comportamiento de un fluido movi&eacute;ndose a lo largo de una tuber&iacute;a y tiene la forma siguiente:</p>
+    <center><img src="img/bernoulli/img4.jpg"/></center>
+    
+    <p><b>Donde:</b></p>
+    <p>V = velocidad del fluido en la secci&oacute;n considerada.</p>
+    <p>P = presi&oacute;n a lo largo de la l&iacute;nea de corriente.</p>
+    <p>g = aceleraci&oacute;n gravitatoria</p>
+    <p>z = altura en la direcci&oacute;n de la gravedad desde una cota de referencia.</p>
+    <p><img src="img/bernoulli/img1.png"/> = es el peso espec&iacute;fico</p>
+    <p><img src="img/bernoulli/img3.jpg"/> = P&eacute;rdidas totales de energia debido a la fricci&oacute;n en la tuber&iacute;a y P&eacute;rdidas menores.</p>
+    <p><img src="img/bernoulli/img2.jpg"/> = Energia que se agrega al fluido con un dispositivo mecanico como una bomba.</p>
+    <p>Nota: Los sub&iacute;ndices 1 y 2 indican si los valores est&aacute;n dados para el comienzo o el final del volumen de control respectivamente.</p>
+</article>
+
+<article id="bernoulli_ejercicios_">        
+    <div class="alert alert-info"><h4><b>Bernoulli / Ejercicios</b></h4></div>
+    <form id="frm_preguntaM4">
+    <h4>1)- En La siguiente figura se aprecia un sistema donde fluye agua a 80&deg;F desde un dep&oacute;sito grande a trav&eacute;s de una bomba a razon de 1000gal/min. Se&ntilde;ale cual alternativa corresponde a la energ&iacute;a de la bomba.</h4>
+        <center><img src="img/bernoulli/img5.jpg"/></center><br />
+    <p>Tuber&iacute;a de acero de 8 pulgadas de di&aacute;metro interno.</p>
+        <p>A)<input type="radio" name="p1m4" id="p1m4" value="0"/>1.37m</p>
+        <p>B)<input type="radio" name="p1m4" id="p1m4" value="1"/>5.37m</p>        
+    </form>
+    
+<script type="text/javascript">
+$(document).ready(function(){
+    var p1m4=$('input[type=radio][name=p1m4]');
+	$(p1m4).change(function () {     
+    	if ($(this).val()!=0){alert("Respuesta Incorrecta, Verifiquela");for (i=0; i<p1m4.length; i++){p1m4[i].checked=false;}}
+    });
+  
+});//end ready
+</script>
+</article>
+
+<article id="bernoulli_soluciones_">        
+    <div class="alert alert-info"><h4><b>Bernoulli / Soluciones</b></h4></div>
+    
+    <h4>1)- Soluci&oacute;n Ejercicio N&deg; 1</h4>
+        <center><img src="img/bernoulli/img6.jpg"/></center>
+    </p><hr />
+</article>
+</div><!-- end content -->
+    
+    <!-- Footer
+    ================================================== -->
+    <footer >
+    <p class="pull-right">
+    <span style="cursor: pointer;">
+    Ing. Maria Brice&ntilde;o
+    </span>
+    </p>
+    </footer>
+    
+    </div><!-- /container -->
+    </body>
+</html>
